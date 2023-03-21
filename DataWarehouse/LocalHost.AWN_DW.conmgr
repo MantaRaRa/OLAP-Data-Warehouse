@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LocalHost.AWN_DW"
+  DTS:DTSID="{77733D6F-2F7D-47D5-8628-8D4BAC88CBA3}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=.;Initial Catalog=AWN_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-DataWarehouse-{77733D6F-2F7D-47D5-8628-8D4BAC88CBA3}LocalHost.AWN_DW;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

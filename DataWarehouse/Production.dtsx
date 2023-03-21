@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/16/2023 11:12:59 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="MANTARARA"
+  DTS:CreatorName="MANTARARA\berry"
+  DTS:DTSID="{C2033B0A-5006-4051-8F6B-577030F206E5}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5131.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionGUID="{B134B5FA-76E0-4873-A06F-7253BF1C1022}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables />
+</DTS:Executable>
