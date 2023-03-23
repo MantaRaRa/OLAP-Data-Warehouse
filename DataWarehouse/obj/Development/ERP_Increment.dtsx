@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{3E95B8E5-3053-4E96-BE45-8DD318E7E4B2}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{0A7F29A0-11E0-4B45-A909-549529ABC05B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -503,6 +503,75 @@
                           cachedName="ModifiedDate"
                           externalMetadataColumnId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[ModifiedDate]"
                           lineageId="Package\Full or First Time\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[ModifiedDate]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[rowguid]"
+                          cachedDataType="guid"
+                          cachedName="rowguid"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[rowguid]"
+                          lineageId="Package\Full or First Time\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[rowguid]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[SalesOrderID]"
+                          cachedDataType="i4"
+                          cachedName="SalesOrderID"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[SalesOrderID]"
+                          lineageId="Package\Full or First Time\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesOrderID]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[SalesOrderDetailID]"
+                          cachedDataType="i4"
+                          cachedName="SalesOrderDetailID"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[SalesOrderDetailID]"
+                          lineageId="Package\Full or First Time\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesOrderDetailID]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[CarrierTrackingNumber]"
+                          cachedDataType="wstr"
+                          cachedLength="25"
+                          cachedName="CarrierTrackingNumber"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[CarrierTrackingNumber]"
+                          lineageId="Package\Full or First Time\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[CarrierTrackingNumber]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[OrderQty]"
+                          cachedDataType="i2"
+                          cachedName="OrderQty"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[OrderQty]"
+                          lineageId="Package\Full or First Time\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[OrderQty]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[ProductID]"
+                          cachedDataType="i4"
+                          cachedName="ProductID"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
+                          lineageId="Package\Full or First Time\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[SpecialOfferID]"
+                          cachedDataType="i4"
+                          cachedName="SpecialOfferID"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[SpecialOfferID]"
+                          lineageId="Package\Full or First Time\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[SpecialOfferID]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[UnitPrice]"
+                          cachedDataType="cy"
+                          cachedName="UnitPrice"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
+                          lineageId="Package\Full or First Time\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[UnitPrice]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[UnitPriceDiscount]"
+                          cachedDataType="cy"
+                          cachedName="UnitPriceDiscount"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[UnitPriceDiscount]"
+                          lineageId="Package\Full or First Time\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[UnitPriceDiscount]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[LineTotal]"
+                          cachedDataType="numeric"
+                          cachedName="LineTotal"
+                          cachedPrecision="38"
+                          cachedScale="6"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[LineTotal]"
+                          lineageId="Package\Full or First Time\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[LineTotal]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[SSISTrackID]"
+                          cachedDataType="i8"
+                          cachedName="SSISTrackID"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[SSISTrackId]"
+                          lineageId="Package\Full or First Time\Sales Details\Derived Column.Outputs[Derived Column Output].Columns[SSISTrackID]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -1344,6 +1413,168 @@
                           cachedName="ModifiedDate"
                           externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[ModifiedDate]"
                           lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[ModifiedDate]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[rowguid]"
+                          cachedDataType="guid"
+                          cachedName="rowguid"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[rowguid]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[rowguid]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[SalesOrderID]"
+                          cachedDataType="i4"
+                          cachedName="SalesOrderID"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[SalesOrderID]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesOrderID]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[RevisionNumber]"
+                          cachedDataType="ui1"
+                          cachedName="RevisionNumber"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[RevisionNumber]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[RevisionNumber]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[OrderDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="OrderDate"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[OrderDate]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[OrderDate]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[DueDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="DueDate"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[DueDate]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[DueDate]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[ShipDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="ShipDate"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[ShipDate]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[ShipDate]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[Status]"
+                          cachedDataType="ui1"
+                          cachedName="Status"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[Status]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[Status]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[OnlineOrderFlag]"
+                          cachedDataType="bool"
+                          cachedName="OnlineOrderFlag"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[OnlineOrderFlag]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[OnlineOrderFlag]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[SalesOrderNumber]"
+                          cachedDataType="wstr"
+                          cachedLength="25"
+                          cachedName="SalesOrderNumber"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[SalesOrderNumber]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesOrderNumber]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[PurchaseOrderNumber]"
+                          cachedDataType="wstr"
+                          cachedLength="25"
+                          cachedName="PurchaseOrderNumber"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[PurchaseOrderNumber]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[PurchaseOrderNumber]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[AccountNumber]"
+                          cachedDataType="wstr"
+                          cachedLength="15"
+                          cachedName="AccountNumber"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[AccountNumber]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[AccountNumber]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[CustomerID]"
+                          cachedDataType="i4"
+                          cachedName="CustomerID"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[CustomerID]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[SalesPersonID]"
+                          cachedDataType="i4"
+                          cachedName="SalesPersonID"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[SalesPersonID]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesPersonID]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[TerritoryID]"
+                          cachedDataType="i4"
+                          cachedName="TerritoryID"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[TerritoryID]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[TerritoryID]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[BillToAddressID]"
+                          cachedDataType="i4"
+                          cachedName="BillToAddressID"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[BillToAddressID]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[BillToAddressID]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[ShipToAddressID]"
+                          cachedDataType="i4"
+                          cachedName="ShipToAddressID"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[ShipToAddressID]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[ShipToAddressID]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[ShipMethodID]"
+                          cachedDataType="i4"
+                          cachedName="ShipMethodID"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[ShipMethodID]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[ShipMethodID]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[CreditCardID]"
+                          cachedDataType="i4"
+                          cachedName="CreditCardID"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[CreditCardID]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[CreditCardID]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[CreditCardApprovalCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="15"
+                          cachedName="CreditCardApprovalCode"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[CreditCardApprovalCode]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[CreditCardApprovalCode]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[CurrencyRateID]"
+                          cachedDataType="i4"
+                          cachedName="CurrencyRateID"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[CurrencyRateID]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyRateID]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[SubTotal]"
+                          cachedDataType="cy"
+                          cachedName="SubTotal"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[SubTotal]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[SubTotal]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[TaxAmt]"
+                          cachedDataType="cy"
+                          cachedName="TaxAmt"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[TaxAmt]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[TaxAmt]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[Freight]"
+                          cachedDataType="cy"
+                          cachedName="Freight"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[Freight]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[Freight]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[TotalDue]"
+                          cachedDataType="cy"
+                          cachedName="TotalDue"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[TotalDue]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalDue]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[Comment]"
+                          cachedDataType="wstr"
+                          cachedLength="128"
+                          cachedName="Comment"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[Comment]"
+                          lineageId="Package\Full or First Time\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[Comment]" />
+                        <inputColumn
+                          refId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[SSISTrackID]"
+                          cachedDataType="i8"
+                          cachedName="SSISTrackID"
+                          externalMetadataColumnId="Package\Full or First Time\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[SSIS_ID]"
+                          lineageId="Package\Full or First Time\Sales Header\Derived Column.Outputs[Derived Column Output].Columns[SSISTrackID]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -1514,7 +1745,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate SalesDetails"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1531,7 +1762,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Truncate SalesHeader"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1578,7 +1809,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get Last Sales Date"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -2046,6 +2277,75 @@
                           cachedName="ModifiedDate"
                           externalMetadataColumnId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[ModifiedDate]"
                           lineageId="Package\Incremental\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[ModifiedDate]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[rowguid]"
+                          cachedDataType="guid"
+                          cachedName="rowguid"
+                          externalMetadataColumnId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[rowguid]"
+                          lineageId="Package\Incremental\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[rowguid]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[SalesOrderID]"
+                          cachedDataType="i4"
+                          cachedName="SalesOrderID"
+                          externalMetadataColumnId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[SalesOrderID]"
+                          lineageId="Package\Incremental\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesOrderID]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[SalesOrderDetailID]"
+                          cachedDataType="i4"
+                          cachedName="SalesOrderDetailID"
+                          externalMetadataColumnId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[SalesOrderDetailID]"
+                          lineageId="Package\Incremental\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesOrderDetailID]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[CarrierTrackingNumber]"
+                          cachedDataType="wstr"
+                          cachedLength="25"
+                          cachedName="CarrierTrackingNumber"
+                          externalMetadataColumnId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[CarrierTrackingNumber]"
+                          lineageId="Package\Incremental\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[CarrierTrackingNumber]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[OrderQty]"
+                          cachedDataType="i2"
+                          cachedName="OrderQty"
+                          externalMetadataColumnId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[OrderQty]"
+                          lineageId="Package\Incremental\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[OrderQty]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[ProductID]"
+                          cachedDataType="i4"
+                          cachedName="ProductID"
+                          externalMetadataColumnId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
+                          lineageId="Package\Incremental\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[SpecialOfferID]"
+                          cachedDataType="i4"
+                          cachedName="SpecialOfferID"
+                          externalMetadataColumnId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[SpecialOfferID]"
+                          lineageId="Package\Incremental\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[SpecialOfferID]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[UnitPrice]"
+                          cachedDataType="cy"
+                          cachedName="UnitPrice"
+                          externalMetadataColumnId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
+                          lineageId="Package\Incremental\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[UnitPrice]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[UnitPriceDiscount]"
+                          cachedDataType="cy"
+                          cachedName="UnitPriceDiscount"
+                          externalMetadataColumnId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[UnitPriceDiscount]"
+                          lineageId="Package\Incremental\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[UnitPriceDiscount]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[LineTotal]"
+                          cachedDataType="numeric"
+                          cachedName="LineTotal"
+                          cachedPrecision="38"
+                          cachedScale="6"
+                          externalMetadataColumnId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[LineTotal]"
+                          lineageId="Package\Incremental\Sales Details\OLE DB Source.Outputs[OLE DB Source Output].Columns[LineTotal]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].Columns[SSISTrackID]"
+                          cachedDataType="i8"
+                          cachedName="SSISTrackID"
+                          externalMetadataColumnId="Package\Incremental\Sales Details\Sales Details Target.Inputs[OLE DB Destination Input].ExternalColumns[SSISTrackId]"
+                          lineageId="Package\Incremental\Sales Details\Derived Column.Outputs[Derived Column Output].Columns[SSISTrackID]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -2887,6 +3187,168 @@
                           cachedName="ModifiedDate"
                           externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[ModifiedDate]"
                           lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[ModifiedDate]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[rowguid]"
+                          cachedDataType="guid"
+                          cachedName="rowguid"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[rowguid]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[rowguid]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[SalesOrderID]"
+                          cachedDataType="i4"
+                          cachedName="SalesOrderID"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[SalesOrderID]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesOrderID]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[RevisionNumber]"
+                          cachedDataType="ui1"
+                          cachedName="RevisionNumber"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[RevisionNumber]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[RevisionNumber]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[OrderDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="OrderDate"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[OrderDate]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[OrderDate]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[DueDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="DueDate"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[DueDate]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[DueDate]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[ShipDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="ShipDate"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[ShipDate]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[ShipDate]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[Status]"
+                          cachedDataType="ui1"
+                          cachedName="Status"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[Status]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[Status]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[OnlineOrderFlag]"
+                          cachedDataType="bool"
+                          cachedName="OnlineOrderFlag"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[OnlineOrderFlag]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[OnlineOrderFlag]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[SalesOrderNumber]"
+                          cachedDataType="wstr"
+                          cachedLength="25"
+                          cachedName="SalesOrderNumber"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[SalesOrderNumber]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesOrderNumber]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[PurchaseOrderNumber]"
+                          cachedDataType="wstr"
+                          cachedLength="25"
+                          cachedName="PurchaseOrderNumber"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[PurchaseOrderNumber]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[PurchaseOrderNumber]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[AccountNumber]"
+                          cachedDataType="wstr"
+                          cachedLength="15"
+                          cachedName="AccountNumber"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[AccountNumber]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[AccountNumber]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[CustomerID]"
+                          cachedDataType="i4"
+                          cachedName="CustomerID"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[CustomerID]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[SalesPersonID]"
+                          cachedDataType="i4"
+                          cachedName="SalesPersonID"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[SalesPersonID]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[SalesPersonID]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[TerritoryID]"
+                          cachedDataType="i4"
+                          cachedName="TerritoryID"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[TerritoryID]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[TerritoryID]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[BillToAddressID]"
+                          cachedDataType="i4"
+                          cachedName="BillToAddressID"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[BillToAddressID]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[BillToAddressID]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[CreditCardID]"
+                          cachedDataType="i4"
+                          cachedName="CreditCardID"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[CreditCardID]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[CreditCardID]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[ShipToAddressID]"
+                          cachedDataType="i4"
+                          cachedName="ShipToAddressID"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[ShipToAddressID]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[ShipToAddressID]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[ShipMethodID]"
+                          cachedDataType="i4"
+                          cachedName="ShipMethodID"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[ShipMethodID]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[ShipMethodID]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[CreditCardApprovalCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="15"
+                          cachedName="CreditCardApprovalCode"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[CreditCardApprovalCode]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[CreditCardApprovalCode]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[CurrencyRateID]"
+                          cachedDataType="i4"
+                          cachedName="CurrencyRateID"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[CurrencyRateID]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyRateID]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[SubTotal]"
+                          cachedDataType="cy"
+                          cachedName="SubTotal"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[SubTotal]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[SubTotal]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[TaxAmt]"
+                          cachedDataType="cy"
+                          cachedName="TaxAmt"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[TaxAmt]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[TaxAmt]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[Freight]"
+                          cachedDataType="cy"
+                          cachedName="Freight"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[Freight]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[Freight]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[TotalDue]"
+                          cachedDataType="cy"
+                          cachedName="TotalDue"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[TotalDue]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalDue]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[Comment]"
+                          cachedDataType="wstr"
+                          cachedLength="128"
+                          cachedName="Comment"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[Comment]"
+                          lineageId="Package\Incremental\Sales Header\OLE DB Source.Outputs[OLE DB Source Output].Columns[Comment]" />
+                        <inputColumn
+                          refId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].Columns[SSISTrackID]"
+                          cachedDataType="i8"
+                          cachedName="SSISTrackID"
+                          externalMetadataColumnId="Package\Incremental\Sales Header\Sales Header Target.Inputs[OLE DB Destination Input].ExternalColumns[SSIS_ID]"
+                          lineageId="Package\Incremental\Sales Header\Derived Column.Outputs[Derived Column Output].Columns[SSISTrackID]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -3108,17 +3570,108 @@
           Id="Package\Expression Task"
           TopLeft="273,28" />
         <NodeLayout
+          Size="143,42"
+          Id="Package\Full or First Time\Sales Details"
+          TopLeft="267,110" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Full or First Time\Sales Header"
+          TopLeft="36,114" />
+        <NodeLayout
+          Size="187,42"
+          Id="Package\Full or First Time\Truncate SalesDetails"
+          TopLeft="256,30" />
+        <NodeLayout
+          Size="189,42"
+          Id="Package\Full or First Time\Truncate SalesHeader"
+          TopLeft="27,30" />
+        <EdgeLayout
+          Id="Package\Full or First Time.PrecedenceConstraints[Constraint]"
+          TopLeft="121.5,72">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-12.5,42"
+              Start="0,0"
+              End="-12.5,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17"
+                    Point2="0,21"
+                    Point3="-4,21" />
+                  <mssgle:LineSegment
+                    End="-8.5,21" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-8.5,21"
+                    Point2="-12.5,21"
+                    Point3="-12.5,25" />
+                  <mssgle:LineSegment
+                    End="-12.5,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Full or First Time.PrecedenceConstraints[Constraint 1]"
+          TopLeft="349.5,72">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-11,38"
+              Start="0,0"
+              End="-11,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15"
+                    Point2="0,19"
+                    Point3="-4,19" />
+                  <mssgle:LineSegment
+                    End="-7,19" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-7,19"
+                    Point2="-11,19"
+                    Point3="-11,23" />
+                  <mssgle:LineSegment
+                    End="-11,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="507,227"
+          Size="507,270"
+          Id="Package\Full or First Time"
+          TopLeft="432,122" />
+        <NodeLayout
           Size="177,42"
           Id="Package\Incremental\Get Last Sales Date"
           TopLeft="98,22" />
         <NodeLayout
-          Size="146,42"
-          Id="Package\Incremental\Sales Header"
-          TopLeft="13,105" />
-        <NodeLayout
           Size="143,42"
           Id="Package\Incremental\Sales Details"
           TopLeft="189,105" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Incremental\Sales Header"
+          TopLeft="13,105" />
         <EdgeLayout
           Id="Package\Incremental.PrecedenceConstraints[Constraint]"
           TopLeft="158.333333333333,64">
@@ -3194,97 +3747,6 @@
           Size="396,265"
           Id="Package\Incremental"
           TopLeft="11,120" />
-        <NodeLayout
-          Size="189,42"
-          Id="Package\Full or First Time\Truncate SalesHeader"
-          TopLeft="27,30" />
-        <NodeLayout
-          Size="187,42"
-          Id="Package\Full or First Time\Truncate SalesDetails"
-          TopLeft="256,30" />
-        <NodeLayout
-          Size="146,42"
-          Id="Package\Full or First Time\Sales Header"
-          TopLeft="36,114" />
-        <EdgeLayout
-          Id="Package\Full or First Time.PrecedenceConstraints[Constraint]"
-          TopLeft="121.5,72">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-12.5,42"
-              Start="0,0"
-              End="-12.5,34.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17"
-                    Point2="0,21"
-                    Point3="-4,21" />
-                  <mssgle:LineSegment
-                    End="-8.5,21" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-8.5,21"
-                    Point2="-12.5,21"
-                    Point3="-12.5,25" />
-                  <mssgle:LineSegment
-                    End="-12.5,34.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="143,42"
-          Id="Package\Full or First Time\Sales Details"
-          TopLeft="267,110" />
-        <EdgeLayout
-          Id="Package\Full or First Time.PrecedenceConstraints[Constraint 1]"
-          TopLeft="349.5,72">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-11,38"
-              Start="0,0"
-              End="-11,30.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,15" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15"
-                    Point2="0,19"
-                    Point3="-4,19" />
-                  <mssgle:LineSegment
-                    End="-7,19" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-7,19"
-                    Point2="-11,19"
-                    Point3="-11,23" />
-                  <mssgle:LineSegment
-                    End="-11,30.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="507,227"
-          Size="507,270"
-          Id="Package\Full or First Time"
-          TopLeft="432,122" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="327.666666666667,70">
@@ -3361,246 +3823,18 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Incremental\Sales Header">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="180,42"
-          Id="Package\Incremental\Sales Header\Sales Header Target"
-          TopLeft="107,404" />
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Incremental\Sales Header\OLE DB Source"
-          TopLeft="116,181" />
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Incremental\Sales Header\Derived Column"
-          TopLeft="108,284" />
-        <EdgeLayout
-          Id="Package\Incremental\Sales Header.Paths[Derived Column Output]"
-          TopLeft="187,326">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="10,78"
-              Start="0,0"
-              End="10,70.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,35"
-                    Point2="0,39"
-                    Point3="4,39" />
-                  <mssgle:LineSegment
-                    End="6,39" />
-                  <mssgle:CubicBezierSegment
-                    Point1="6,39"
-                    Point2="10,39"
-                    Point3="10,43" />
-                  <mssgle:LineSegment
-                    End="10,70.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Incremental\Sales Header.Paths[OLE DB Source Output]"
-          TopLeft="190.75,223">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,61"
-              Start="0,0"
-              End="0,53.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,53.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Incremental\Sales Details">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="178,42"
-          Id="Package\Incremental\Sales Details\Sales Details Target"
-          TopLeft="242,450" />
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Incremental\Sales Details\OLE DB Source"
-          TopLeft="251,227" />
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Incremental\Sales Details\Derived Column"
-          TopLeft="243,330" />
-        <EdgeLayout
-          Id="Package\Incremental\Sales Details.Paths[Derived Column Output]"
-          TopLeft="322,372">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="9,78"
-              Start="0,0"
-              End="9,70.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,35"
-                    Point2="0,39"
-                    Point3="4,39" />
-                  <mssgle:LineSegment
-                    End="5,39" />
-                  <mssgle:CubicBezierSegment
-                    Point1="5,39"
-                    Point2="9,39"
-                    Point3="9,43" />
-                  <mssgle:LineSegment
-                    End="9,70.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Incremental\Sales Details.Paths[OLE DB Source Output]"
-          TopLeft="325.75,269">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,61"
-              Start="0,0"
-              End="0,53.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,53.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Full or First Time\Sales Header">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="180,42"
-          Id="Package\Full or First Time\Sales Header\Sales Header Target"
-          TopLeft="339,355" />
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Full or First Time\Sales Header\OLE DB Source"
-          TopLeft="348,132" />
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Full or First Time\Sales Header\Derived Column"
-          TopLeft="340,235" />
-        <EdgeLayout
-          Id="Package\Full or First Time\Sales Header.Paths[Derived Column Output]"
-          TopLeft="419,277">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="10,78"
-              Start="0,0"
-              End="10,70.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,35"
-                    Point2="0,39"
-                    Point3="4,39" />
-                  <mssgle:LineSegment
-                    End="6,39" />
-                  <mssgle:CubicBezierSegment
-                    Point1="6,39"
-                    Point2="10,39"
-                    Point3="10,43" />
-                  <mssgle:LineSegment
-                    End="10,70.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Full or First Time\Sales Header.Paths[OLE DB Source Output]"
-          TopLeft="422.75,174">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,61"
-              Start="0,0"
-              End="0,53.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,53.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
     design-time-name="Package\Full or First Time\Sales Details">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="178,42"
-          Id="Package\Full or First Time\Sales Details\Sales Details Target"
-          TopLeft="115,330" />
-        <NodeLayout
           Size="157,42"
           Id="Package\Full or First Time\Sales Details\OLE DB Source"
           TopLeft="124,107" />
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Full or First Time\Sales Details\Sales Details Target"
+          TopLeft="115,330" />
         <NodeLayout
           Size="158,42"
           Id="Package\Full or First Time\Sales Details\Derived Column"
@@ -3665,7 +3899,84 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Incremental\Sales Header\Sales Header Target">
+    design-time-name="Package\Full or First Time\Sales Details\Sales Details Target">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Full or First Time\Sales Header">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Full or First Time\Sales Header\Sales Header Target"
+          TopLeft="69,250" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Full or First Time\Sales Header\OLE DB Source"
+          TopLeft="78,27" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Full or First Time\Sales Header\Derived Column"
+          TopLeft="70,130" />
+        <EdgeLayout
+          Id="Package\Full or First Time\Sales Header.Paths[OLE DB Source Output]"
+          TopLeft="151,69">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61"
+              Start="0,0"
+              End="0,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Full or First Time\Sales Header.Paths[Derived Column Output]"
+          TopLeft="152.75,172">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,78"
+              Start="0,0"
+              End="0,70.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Full or First Time\Sales Header\Sales Header Target">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3678,7 +3989,96 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Incremental\Sales Header\OLE DB Source">
+    design-time-name="Package\Full or First Time\Sales Header\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Incremental\Sales Details">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Incremental\Sales Details\OLE DB Source"
+          TopLeft="22,61" />
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Incremental\Sales Details\Sales Details Target"
+          TopLeft="13,284" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Incremental\Sales Details\Derived Column"
+          TopLeft="14,164" />
+        <EdgeLayout
+          Id="Package\Incremental\Sales Details.Paths[Derived Column Output]"
+          TopLeft="93,206">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9,78"
+              Start="0,0"
+              End="9,70.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35"
+                    Point2="0,39"
+                    Point3="4,39" />
+                  <mssgle:LineSegment
+                    End="5,39" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5,39"
+                    Point2="9,39"
+                    Point3="9,43" />
+                  <mssgle:LineSegment
+                    End="9,70.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Incremental\Sales Details.Paths[OLE DB Source Output]"
+          TopLeft="96.75,103">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61"
+              Start="0,0"
+              End="0,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Incremental\Sales Details\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3703,8 +4103,97 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Incremental\Sales Header">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Incremental\Sales Header\Sales Header Target"
+          TopLeft="27,269" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Incremental\Sales Header\OLE DB Source"
+          TopLeft="36,46" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Incremental\Sales Header\Derived Column"
+          TopLeft="28,149" />
+        <EdgeLayout
+          Id="Package\Incremental\Sales Header.Paths[OLE DB Source Output]"
+          TopLeft="110.75,88">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61"
+              Start="0,0"
+              End="0,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Incremental\Sales Header.Paths[Derived Column Output]"
+          TopLeft="107,191">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="10,78"
+              Start="0,0"
+              End="10,70.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35"
+                    Point2="0,39"
+                    Point3="4,39" />
+                  <mssgle:LineSegment
+                    End="6,39" />
+                  <mssgle:CubicBezierSegment
+                    Point1="6,39"
+                    Point2="10,39"
+                    Point3="10,43" />
+                  <mssgle:LineSegment
+                    End="10,70.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Incremental\Sales Details\OLE DB Source">
+    design-time-name="Package\Incremental\Sales Header\Sales Header Target">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Incremental\Sales Header\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
