@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="ERP_Full"
   DTS:PackageType="5"
-  DTS:VersionBuild="24"
-  DTS:VersionGUID="{C63E3A45-155E-4A6F-9F50-8D36FBFB5B9B}">
+  DTS:VersionBuild="25"
+  DTS:VersionGUID="{9DFFF1A6-A71C-477A-9032-CBD20D87C249}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -1049,408 +1049,6 @@
               endId="Package\Business Entity\Derived Column.Inputs[Derived Column Input]"
               name="OLE DB Source Output"
               startId="Package\Business Entity\OLE DB Source.Outputs[OLE DB Source Output]" />
-          </paths>
-        </pipeline>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Currency"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{f418d678-557a-4f04-a0ad-24127427d5ea}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Currency"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1">
-          <components>
-            <component
-              refId="Package\Currency\Currency Target"
-              componentClassID="Microsoft.OLEDBDestination"
-              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-              description="OLE DB Destination"
-              name="Currency Target"
-              usesDispositions="true"
-              version="4">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[erp].[Currency]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">3</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                  name="FastLoadMaxInsertCommitSize">2147483647</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Currency\Currency Target.Connections[OleDbConnection]"
-                  connectionManagerID="{4A1CC36E-A4C0-4440-80EF-9ECAC6B81B08}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[LocalHost.AWN_STG]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input]"
-                  errorOrTruncationOperation="Insert"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="OLE DB Destination Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input].Columns[CurrencyCode]"
-                      cachedDataType="wstr"
-                      cachedLength="3"
-                      cachedName="CurrencyCode"
-                      externalMetadataColumnId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[CurrencyCode]"
-                      lineageId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyCode]" />
-                    <inputColumn
-                      refId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input].Columns[Name]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Name"
-                      externalMetadataColumnId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
-                      lineageId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]" />
-                    <inputColumn
-                      refId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input].Columns[ModifiedDate]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="ModifiedDate"
-                      externalMetadataColumnId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[ModifiedDate]"
-                      lineageId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[ModifiedDate]" />
-                    <inputColumn
-                      refId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input].Columns[SSISTrackID]"
-                      cachedDataType="i8"
-                      cachedName="SSISTrackID"
-                      externalMetadataColumnId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[SSISTrackId]"
-                      lineageId="Package\Currency\Derived Column.Outputs[Derived Column Output].Columns[SSISTrackID]" />
-                  </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[CurrencyCode]"
-                      dataType="wstr"
-                      length="3"
-                      name="CurrencyCode" />
-                    <externalMetadataColumn
-                      refId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
-                      dataType="wstr"
-                      length="50"
-                      name="Name" />
-                    <externalMetadataColumn
-                      refId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[ModifiedDate]"
-                      dataType="dbTimeStamp"
-                      name="ModifiedDate" />
-                    <externalMetadataColumn
-                      refId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[Created_Dt]"
-                      dataType="dbTimeStamp"
-                      name="Created_Dt" />
-                    <externalMetadataColumn
-                      refId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[SSISTrackId]"
-                      dataType="i4"
-                      name="SSISTrackId" />
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Currency\Currency Target.Outputs[OLE DB Destination Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Currency\Currency Target.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Currency\Currency Target.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Currency\Currency Target.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Currency\Currency Target.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Currency\Derived Column"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="Derived Column"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\Currency\Derived Column.Inputs[Derived Column Input]"
-                  description="Input to the Derived Column Transformation"
-                  name="Derived Column Input">
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Currency\Derived Column.Outputs[Derived Column Output]"
-                  description="Default Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  name="Derived Column Output"
-                  synchronousInputId="Package\Currency\Derived Column.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Currency\Derived Column.Outputs[Derived Column Output].Columns[SSISTrackID]"
-                      dataType="i8"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Currency\Derived Column.Outputs[Derived Column Output].Columns[SSISTrackID]"
-                      name="SSISTrackID"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">@[System::ServerExecutionID]</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">@[System::ServerExecutionID]</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Currency\Derived Column.Outputs[Derived Column Error Output]"
-                  description="Error Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Derived Column Error Output"
-                  synchronousInputId="Package\Currency\Derived Column.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Currency\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Currency\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Currency\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Currency\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Currency\OLE DB Source"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-              description="OLE DB Source"
-              name="OLE DB Source"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[Sales].[Currency]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Currency\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{62015914-941A-472B-9839-5A0E372815FD}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[LocalHost.AdventureWorks2014]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output]"
-                  name="OLE DB Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyCode]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CurrencyCode]"
-                      length="3"
-                      lineageId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyCode]"
-                      name="CurrencyCode"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
-                      length="50"
-                      lineageId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
-                      name="Name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[ModifiedDate]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
-                      lineageId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[ModifiedDate]"
-                      name="ModifiedDate"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CurrencyCode]"
-                      dataType="wstr"
-                      length="3"
-                      name="CurrencyCode" />
-                    <externalMetadataColumn
-                      refId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
-                      dataType="wstr"
-                      length="50"
-                      name="Name" />
-                    <externalMetadataColumn
-                      refId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
-                      dataType="dbTimeStamp"
-                      name="ModifiedDate" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Error Output]"
-                  isErrorOut="true"
-                  name="OLE DB Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CurrencyCode]"
-                      dataType="wstr"
-                      length="3"
-                      lineageId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CurrencyCode]"
-                      name="CurrencyCode" />
-                    <outputColumn
-                      refId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
-                      name="Name" />
-                    <outputColumn
-                      refId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ModifiedDate]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ModifiedDate]"
-                      name="ModifiedDate" />
-                    <outputColumn
-                      refId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-          </components>
-          <paths>
-            <path
-              refId="Package\Currency.Paths[Derived Column Output]"
-              endId="Package\Currency\Currency Target.Inputs[OLE DB Destination Input]"
-              name="Derived Column Output"
-              startId="Package\Currency\Derived Column.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Currency.Paths[OLE DB Source Output]"
-              endId="Package\Currency\Derived Column.Inputs[Derived Column Input]"
-              name="OLE DB Source Output"
-              startId="Package\Currency\OLE DB Source.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -3644,6 +3242,447 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Sequence Container"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{BBE0D710-B347-4A16-918E-D630C631B5FB}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence Container">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Currency"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{f418d678-557a-4f04-a0ad-24127427d5ea}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Currency"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Currency\Currency Target"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="Currency Target"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[erp].[Currency]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Currency\Currency Target.Connections[OleDbConnection]"
+                      connectionManagerID="{4A1CC36E-A4C0-4440-80EF-9ECAC6B81B08}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[LocalHost.AWN_STG]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input].Columns[CurrencyCode]"
+                          cachedDataType="wstr"
+                          cachedLength="3"
+                          cachedName="CurrencyCode"
+                          externalMetadataColumnId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[CurrencyCode]"
+                          lineageId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyCode]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input].Columns[Name]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Name"
+                          externalMetadataColumnId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                          lineageId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input].Columns[ModifiedDate]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="ModifiedDate"
+                          externalMetadataColumnId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[ModifiedDate]"
+                          lineageId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[ModifiedDate]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input].Columns[SSISTrackID]"
+                          cachedDataType="i8"
+                          cachedName="SSISTrackID"
+                          externalMetadataColumnId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[SSISTrackId]"
+                          lineageId="Package\Sequence Container\Currency\Derived Column.Outputs[Derived Column Output].Columns[SSISTrackID]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[CurrencyCode]"
+                          dataType="wstr"
+                          length="3"
+                          name="CurrencyCode" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                          dataType="wstr"
+                          length="50"
+                          name="Name" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[ModifiedDate]"
+                          dataType="dbTimeStamp"
+                          name="ModifiedDate" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[Created_Dt]"
+                          dataType="dbTimeStamp"
+                          name="Created_Dt" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input].ExternalColumns[SSISTrackId]"
+                          dataType="i4"
+                          name="SSISTrackId" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Currency\Currency Target.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Currency\Currency Target.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Currency\Currency Target.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Currency\Currency Target.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Currency\Currency Target.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Currency\Derived Column"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Derived Column"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Currency\Derived Column.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Currency\Derived Column.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Sequence Container\Currency\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Currency\Derived Column.Outputs[Derived Column Output].Columns[SSISTrackID]"
+                          dataType="i8"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Sequence Container\Currency\Derived Column.Outputs[Derived Column Output].Columns[SSISTrackID]"
+                          name="SSISTrackID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">@[System::ServerExecutionID]</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">@[System::ServerExecutionID]</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Currency\Derived Column.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Sequence Container\Currency\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Currency\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Currency\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Currency\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Currency\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Currency\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[Sales].[Currency]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Currency\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="{62015914-941A-472B-9839-5A0E372815FD}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[LocalHost.AdventureWorks2014]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyCode]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CurrencyCode]"
+                          length="3"
+                          lineageId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyCode]"
+                          name="CurrencyCode"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                          length="50"
+                          lineageId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                          name="Name"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[ModifiedDate]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
+                          lineageId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output].Columns[ModifiedDate]"
+                          name="ModifiedDate"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CurrencyCode]"
+                          dataType="wstr"
+                          length="3"
+                          name="CurrencyCode" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                          dataType="wstr"
+                          length="50"
+                          name="Name" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
+                          dataType="dbTimeStamp"
+                          name="ModifiedDate" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CurrencyCode]"
+                          dataType="wstr"
+                          length="3"
+                          lineageId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CurrencyCode]"
+                          name="CurrencyCode" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                          name="Name" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ModifiedDate]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ModifiedDate]"
+                          name="ModifiedDate" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Currency.Paths[Derived Column Output]"
+                  endId="Package\Sequence Container\Currency\Currency Target.Inputs[OLE DB Destination Input]"
+                  name="Derived Column Output"
+                  startId="Package\Sequence Container\Currency\Derived Column.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Sequence Container\Currency.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\Currency\Derived Column.Inputs[Derived Column Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\Currency\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Truncate Currency"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{09f6a5ab-b37d-46db-89ab-717593d40887}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Truncate Currency"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="6">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{4A1CC36E-A4C0-4440-80EF-9ECAC6B81B08}"
+              SQLTask:SqlStatementSource="truncate table [erp].[Currency]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{47016CDA-ADA1-4D25-88B1-46849A1C19AC}"
+          DTS:From="Package\Sequence Container\Truncate Currency"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Sequence Container\Currency" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Store"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
@@ -3652,7 +3691,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Store"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="6">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3669,7 +3708,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Territory"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3686,7 +3725,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate Address"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3703,29 +3742,12 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate Business Entity"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{4A1CC36E-A4C0-4440-80EF-9ECAC6B81B08}"
           SQLTask:SqlStatementSource="truncate table [erp].[Business_Entity]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Truncate Currency"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{09f6a5ab-b37d-46db-89ab-717593d40887}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Truncate Currency"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{4A1CC36E-A4C0-4440-80EF-9ECAC6B81B08}"
-          SQLTask:SqlStatementSource="truncate table [erp].[Currency]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -3764,14 +3786,6 @@
     </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint]"
-      DTS:CreationName=""
-      DTS:DTSID="{47016CDA-ADA1-4D25-88B1-46849A1C19AC}"
-      DTS:From="Package\Truncate Currency"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint"
-      DTS:To="Package\Currency" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
@@ -3842,10 +3856,6 @@
           Id="Package\Business Entity"
           TopLeft="851,101" />
         <NodeLayout
-          Size="124,42"
-          Id="Package\Currency"
-          TopLeft="27,96" />
-        <NodeLayout
           Size="127,42"
           Id="Package\Customer"
           TopLeft="239,92" />
@@ -3878,10 +3888,6 @@
           Id="Package\Truncate Business Entity"
           TopLeft="839,35" />
         <NodeLayout
-          Size="170,42"
-          Id="Package\Truncate Currency"
-          TopLeft="19,30" />
-        <NodeLayout
           Size="173,42"
           Id="Package\Truncate Customer"
           TopLeft="231,25" />
@@ -3889,40 +3895,6 @@
           Size="160,42"
           Id="Package\Truncate Person"
           TopLeft="438,29" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="104,72">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-15,24"
-              Start="0,0"
-              End="-15,16.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,8" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,8"
-                    Point2="0,12"
-                    Point3="-4,12" />
-                  <mssgle:LineSegment
-                    End="-11,12" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-11,12"
-                    Point2="-15,12"
-                    Point3="-15,16" />
-                  <mssgle:LineSegment
-                    End="-15,16.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="317.5,67">
@@ -4127,6 +4099,55 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="124,42"
+          Id="Package\Sequence Container\Currency"
+          TopLeft="33,90" />
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          TopLeft="110,66">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15,24"
+              Start="0,0"
+              End="-15,16.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8"
+                    Point2="0,12"
+                    Point3="-4,12" />
+                  <mssgle:LineSegment
+                    End="-11,12" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11,12"
+                    Point2="-15,12"
+                    Point3="-15,16" />
+                  <mssgle:LineSegment
+                    End="-15,16.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Sequence Container\Truncate Currency"
+          TopLeft="25,24" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="205,187"
+          Size="205,230"
+          Id="Package\Sequence Container"
+          TopLeft="467,167" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -4297,19 +4318,6 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Business Entity\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Business Entity\Business Enity Target">
     <Properties>
       <Property>
@@ -4322,25 +4330,38 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Business Entity\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Currency">
+    design-time-name="Package\Sequence Container\Currency">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="158,42"
-          Id="Package\Currency\Currency Target"
+          Id="Package\Sequence Container\Currency\Currency Target"
           TopLeft="79,267" />
         <NodeLayout
           Size="157,42"
-          Id="Package\Currency\OLE DB Source"
+          Id="Package\Sequence Container\Currency\OLE DB Source"
           TopLeft="88,44" />
         <NodeLayout
           Size="158,42"
-          Id="Package\Currency\Derived Column"
+          Id="Package\Sequence Container\Currency\Derived Column"
           TopLeft="80,147" />
         <EdgeLayout
-          Id="Package\Currency.Paths[OLE DB Source Output]"
+          Id="Package\Sequence Container\Currency.Paths[OLE DB Source Output]"
           TopLeft="162.75,86">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4362,7 +4383,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Currency.Paths[Derived Column Output]"
+          Id="Package\Sequence Container\Currency.Paths[Derived Column Output]"
           TopLeft="158.5,189">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4387,7 +4408,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Currency\Currency Target">
+    design-time-name="Package\Sequence Container\Currency\Currency Target">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
