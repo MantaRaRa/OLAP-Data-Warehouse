@@ -1,0 +1,9 @@
+C:\Users\berry\Desktop\Repo\SQL\OLAP-Data-Warehouse\AWN_SSAS\bin\Model.asdatabase
+C:\Users\berry\Desktop\Repo\SQL\OLAP-Data-Warehouse\AWN_SSAS\bin\Model.deploymenttargets
+C:\Users\berry\Desktop\Repo\SQL\OLAP-Data-Warehouse\AWN_SSAS\bin\Model.deploymentoptions
+C:\Users\berry\Desktop\Repo\SQL\OLAP-Data-Warehouse\AWN_SSAS\obj\Development\AWN_SSAS.smproj.AssemblyReference.cache
+C:\Users\berry\Desktop\Repo\SQL\OLAP-Data-Warehouse\AWN_SSAS\obj\Development\AWN_SSAS.smproj.SuggestedBindingRedirects.cache
+C:\Users\berry\Desktop\Repo\SQL\OLAP-Data-Warehouse\AWN_SSAS\obj\Development\AWN_SSAS.smproj.CoreCompileInputs.cache
+C:\Users\berry\Desktop\Repo\SQL\OLAP-Data-Warehouse\AWN_SSAS\obj\Development\Model.asdatabase
+C:\Users\berry\Desktop\Repo\SQL\OLAP-Data-Warehouse\AWN_SSAS\obj\Development\Model.deploymentoptions
+C:\Users\berry\Desktop\Repo\SQL\OLAP-Data-Warehouse\AWN_SSAS\obj\Development\Model.deploymenttargets
