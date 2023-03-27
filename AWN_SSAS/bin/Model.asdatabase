@@ -6,7 +6,7 @@
     "dataSources": [
       {
         "name": "SqlServer localhost AWN_DW",
-        "connectionString": "Provider=SQLOLEDB;Data Source=.;Initial Catalog=AWN_DW;Integrated Security=SSPI;Persist Security Info=false",
+        "connectionString": "Provider=SQLOLEDB;Data Source=.;Initial Catalog=AWN_DW;Persist Security Info=false;User ID=MantaRaRa;Integrated Security=SSPI",
         "impersonationMode": "impersonateServiceAccount",
         "annotations": [
           {
