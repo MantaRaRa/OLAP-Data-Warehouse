@@ -2,7 +2,7 @@
 
 **FEATURES**
 
-_1_: Set up a local database and read data in with SQL Server Management Studio (SSMS)
+_1_: Set up a local database and read data with SQL Server Management Studio (SSMS)
 
 _2_: Merge and join.  Data is cleaned and read in from a DataWarehouse, the DW is created from a Staging Layer that consists of 3 databases, a backup file from Microsoft's AdventerWorks Business Case Study (AdventureWorks2014.bak) and two other databases created from the different tables pulled and joined from the AdventureWorks2014 back up files.
 
@@ -12,13 +12,14 @@ _3_: Make an Interactive Power BI dashboard to display the data.  After creating
 _4_: Utilizing Visual Studio's Integration Services (SSIS) to update and populate the tables in SqL Server Management Studio (SSMS)
 
 
-###Special instructions required for the Reviewer:###
+### Special instructions required for the Reviewer:
 
-To View the Power BI file (TotalSalesby Inventory and Region.pbix), you must have Power BI downloaded and installed on your computer:
+To View the Power BI file (TotalSalesby Inventory and Region.pbix), 
+you must have Power BI downloaded and installed on your computer:
 `https://powerbi.microsoft.com/en-us/downloads/`
 If you choose to not download Power BI you can reference the dashboard from the attached .pdf file but it will not have the interactive options.
 
-To Extract and view the AdventureWorks2014.bak file you will need to download and install both SQL Server 2022 and SqL Server Management Studio (SSMS):
+To Extract and view the AdventureWorks2014.bak file, you will need to download and install both SQL Server 2022 and SqL Server Management Studio (SSMS):
 `https://info.microsoft.com/ww-landing-sql-server-2022.html?culture=en-us&country=us`
 `https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices`
 
