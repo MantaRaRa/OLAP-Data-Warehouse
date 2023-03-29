@@ -34,9 +34,13 @@ Once your done installing SQL Sever put the AdventureWorks2014.bak file in the f
 `C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup`
 
 Once you've relocated the AdventureWorks2014.bak, open SqL Server Management Studio (SSMS).
+
 In your `Object Explorer` tab, press the connect button and a dialog box will pop up, its called connect to server (SQL Server), 
+
 for your Server name type `localhost` and connect.
+
 After you've connected to your Server, expand the tree and right click the `Databases` folder, 
+
 choose `Restore Database...` at the `Destination` option click the drop down arrow and choose `AdventureWorks2014`.
 
 **•** To view the DataWarehouse, AWN_DW, and AWN_SSAS solution files you will need to install the SSIS extensions and the data Tools for Visual Studio:
@@ -44,7 +48,9 @@ choose `Restore Database...` at the `Destination` option click the drop down arr
 
 For the data Tools:
 Open Visual Studio Installer, click `Modify` button, 
+
 Scroll down to `Other Toolsets`, 
+
 Select `Data storage and processing`, than click Modify
 
 Once your done installing, open the solutions located in their respective folder. You will have to reroute all 
