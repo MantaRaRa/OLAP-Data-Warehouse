@@ -1,6 +1,6 @@
 # OLAP-Data-Warehouse
 
-This Capstone Highlights a DataWarehouse and the work it takes to have enough clean data to be able to author it in Power BI.  I extracted a back up file provided by Microsoft's Business Scenario github page.  From this back up file I created 2 more databases for the staging layer.  In the Staging and Datawarehouse Databases, I identified the Fact and Dimension tables.     
+This Capstone Highlights a DataWarehouse and the work it takes to have enough clean data to be able to author it in Power BI.  I extracted a back up file provided by Microsoft's Business Scenario github page.  From this back up file I created 2 more databases for the staging layer.  In the Staging and Datawarehouse Databases, I identified the Fact and Dimension tables.  After Joining and Cleaning the tables I leveraged SQL Server Integration Services to load the Source to the Staging layer and from the Staging layer to the Datawarehouse, to execute all the packages to load in to the DW, I created two Control Packages. Inside the AWN_SSAS folder, there is a solution where the Tabular Model is created, this model is loaded into SQL Server Management Studio for Analyzing and loaded into Power BI.
 
 
 **FEATURES**
