@@ -26,6 +26,7 @@ If you choose to not download Power BI you can reference the dashboard from the 
 **•** To Extract and view the AdventureWorks2014.bak file, you will need to download and install both SQL Server 2022 and SqL Server Management Studio (SSMS):
 
 `https://info.microsoft.com/ww-landing-sql-server-2022.html?culture=en-us&country=us`
+
 `https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices`
 
 Once your done installing SQL Sever put the AdventureWorks2014.bak file in the folder:
