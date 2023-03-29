@@ -20,13 +20,16 @@ _4_: Utilizing Visual Studio's Integration Services (SSIS) to update and populat
 **•** To View the Power BI file (TotalSalesby Inventory and Region.pbix), 
 you must have Power BI downloaded and installed on your computer:
 `https://powerbi.microsoft.com/en-us/downloads/`
+
 If you choose to not download Power BI you can reference the dashboard from the attached .pdf file but it will not have the interactive options.
 
 **•** To Extract and view the AdventureWorks2014.bak file, you will need to download and install both SQL Server 2022 and SqL Server Management Studio (SSMS):
+
 `https://info.microsoft.com/ww-landing-sql-server-2022.html?culture=en-us&country=us`
 `https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices`
 
 Once your done installing SQL Sever put the AdventureWorks2014.bak file in the folder:
+
 `C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup`
 
 Once you've relocated the AdventureWorks2014.bak, open SqL Server Management Studio (SSMS).
