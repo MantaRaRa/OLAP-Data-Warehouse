@@ -15,7 +15,9 @@ _3_: Make an Interactive Power BI dashboard to display the data.  After creating
 _4_: Utilizing Visual Studio's Integration Services (SSIS) to update and populate the tables in SqL Server Management Studio (SSMS)
 
 
-## ### Special instructions required for the Reviewer:
+<details>
+
+## <summary>Special instructions required for the Reviewer:</summary>
 
 **•** To View the Power BI file (TotalSalesby Inventory and Region.pbix), 
 you must have Power BI downloaded and installed on your computer:
@@ -54,3 +56,8 @@ Scroll down to `Other Toolsets`,
 Select `Data storage and processing`, than click Modify
 
 Once your done installing, open the solutions located in their respective folder. You will have to reroute all 
+
+
+
+
+</details>
