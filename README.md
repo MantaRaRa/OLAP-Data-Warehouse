@@ -1,6 +1,6 @@
 # OLAP-Data-Warehouse
 
-This Capstone Highlights a DataWarehouse and the work it takes to have enough clean data to be able to author it in Power BI.  I extracted a back up file provided by Microsoft's Business Scenario github page.  From this back up file I created 2 more databases for the staging layer.  In the Staging and Datawarehouse Databases, I identified the Fact and Dimension tables.  After Joining and Cleaning the tables I leveraged SQL Server Integration Services to load the Source to the Staging layer and from the Staging layer to the Datawarehouse, to execute all the packages to load in to the DW, I created two Control Packages. Inside the AWN_SSAS folder, there is a solution where the Tabular Model is created, this model is loaded into SQL Server Management Studio for Analyzing and loaded into Power BI.
+This Capstone Highlights a DataWarehouse and the work it takes to have enough clean data to be able to author it in Power BI.  I extracted a back up file provided by Microsoft's Business Scenario github page.  From this back up file I created 2 more databases for the staging layer.  In the Staging and Datawarehouse Databases, I identified the Fact and Dimension tables.  After Joining and Cleaning the tables I leveraged SQL Server Integration Services to load the Source to the Staging layer and from the Staging layer to the Datawarehouse. To execute all the packages at once, I created two Control Packages. Inside the AWN_SSAS folder, there is a solution where the Tabular Model is created, this model is loaded into SQL Server Management Studio for Analyzing and loaded into Power BI.
 
 
 ## **FEATURES**
@@ -18,6 +18,7 @@ _4_: Utilizing Visual Studio's Integration Services (SSIS) to update and populat
 <details>
 
 <summary>Special instructions required for the Reviewer:</summary>
+
 
 **•** To View the Power BI file (TotalSalesby Inventory and Region.pbix), 
 you must have Power BI downloaded and installed on your computer:
@@ -55,9 +56,10 @@ Scroll down to `Other Toolsets`,
 
 Select `Data storage and processing`, than click Modify
 
-Once your done installing, open the solutions located in their respective folder. You will have to reroute all 
+Once your done installing, open the solutions located in their respective folder. You will have to reroute all the DataBase connections:
 
-
+In the Solution Explorer double click the Connection Managers and direct it to your localhost by typing a Period `.` in the `Server Name` field, below that in 
+`connect to a database` click the dropdown menu and locate the database, do this for all 3 databases.
 
 
 </details>
