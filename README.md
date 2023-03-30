@@ -3,7 +3,7 @@
 This Capstone Highlights a DataWarehouse and the work it takes to have enough clean data to be able to author it in Power BI.  I extracted a back up file provided by Microsoft's Business Scenario github page.  From this back up file I created 2 more databases for the staging layer.  In the Staging and Datawarehouse Databases, I identified the Fact and Dimension tables.  After Joining and Cleaning the tables I leveraged SQL Server Integration Services to load the Source to the Staging layer and from the Staging layer to the Datawarehouse, to execute all the packages to load in to the DW, I created two Control Packages. Inside the AWN_SSAS folder, there is a solution where the Tabular Model is created, this model is loaded into SQL Server Management Studio for Analyzing and loaded into Power BI.
 
 
-**FEATURES**
+## **FEATURES**
 
 _1_: Set up a local database and read data with SQL Server Management Studio (SSMS)
 
@@ -15,7 +15,7 @@ _3_: Make an Interactive Power BI dashboard to display the data.  After creating
 _4_: Utilizing Visual Studio's Integration Services (SSIS) to update and populate the tables in SqL Server Management Studio (SSMS)
 
 
-### Special instructions required for the Reviewer:
+## ### Special instructions required for the Reviewer:
 
 **•** To View the Power BI file (TotalSalesby Inventory and Region.pbix), 
 you must have Power BI downloaded and installed on your computer:
