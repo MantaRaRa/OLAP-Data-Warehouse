@@ -17,7 +17,7 @@ _4_: Utilizing Visual Studio's Integration Services (SSIS) to update and populat
 
 <details>
 
-## <summary>Special instructions required for the Reviewer:</summary>
+<summary>Special instructions required for the Reviewer:</summary>
 
 **•** To View the Power BI file (TotalSalesby Inventory and Region.pbix), 
 you must have Power BI downloaded and installed on your computer:
