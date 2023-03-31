@@ -26,6 +26,8 @@ you must have Power BI downloaded and installed on your computer:
 
 If you choose to not download Power BI you can reference the dashboard from the attached .pdf file but it will not have the interactive options.
 
+#
+
 **•** To Extract and view the AdventureWorks2014.bak file, you will need to download and install both SQL Server 2022 and SqL Server Management Studio (SSMS):
 
 `https://info.microsoft.com/ww-landing-sql-server-2022.html?culture=en-us&country=us`
@@ -45,6 +47,14 @@ for your Server name type `localhost` and connect.
 After you've connected to your Server, expand the tree and right click the `Databases` folder, 
 
 choose `Restore Database...` at the `Destination` option click the drop down arrow and choose `AdventureWorks2014`.
+
+#
+
+**•** To Create the other two databases (AWN_STG.sql and AWN_DW.sql):
+Locate the scripts folder, inside there are 3 SQL script, load them into SqL Server Management Studio (SSMS) and `Execute` them by clicking the Play button or by pressing 
+(ALT + X)
+
+#
 
 **•** To view the DataWarehouse, AWN_DW, and AWN_SSAS solution files you will need to install the SSIS extensions and the data Tools for Visual Studio:
 `https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices`
