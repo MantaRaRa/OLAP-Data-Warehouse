@@ -1,13 +1,14 @@
 # OLAP-Data-Warehouse
 
 This Capstone Highlights a DataWarehouse and the work it takes to have enough clean data to be able to author it in Power BI.  I extracted a back up file provided by Microsoft's Business Scenario github page.  From this back up file I created 2 more databases for the staging layer.  In the Staging and Datawarehouse Databases, I identified the Fact and Dimension tables.  After Joining and Cleaning the tables I leveraged SQL Server Integration Services to load the Source to the Staging layer and from the Staging layer to the Datawarehouse. To execute all the packages at once, I created two Control Packages. Inside the AWN_SSAS folder, there is a solution where the Tabular Model is created, this model is loaded into SQL Server Management Studio for Analyzing and loaded into Power BI.
+In a Real world scenario the DataBase will be located off site somewhere, the staging layer and the Datawarehouse would also be created off site as well. Only indiviuals with the correct authority and credentials will have access to the data to query.
 
 
 ## **FEATURES**
 
 _1_: Set up a local database and read data with SQL Server Management Studio (SSMS)
 
-_2_: Merge and join.  Data is cleaned and read in from a DataWarehouse, the DW is created from a Staging Layer that consists of 3 databases, a backup file from Microsoft's AdventerWorks Business Case Study (AdventureWorks2014.bak) and two other databases created from the different tables pulled and joined from the AdventureWorks2014 back up files.
+_2_: Merge and join.  Data is cleaned and read in from a DataWarehouse, the DW is created from a Staging Layer that consists of 3 databases, a backup file from Microsoft's AdventerWorks Business Case Study (AdventureWorks2014.bak) and two other databases created from the different tables pulled and joined from the AdventureWorks2014 back up file.
 
 _3_: Make an Interactive Power BI dashboard to display the data.  After creating and joining the products tables I created 2 dash boards:
     Total Sales by Region and Total Sales by Inventory.
@@ -18,6 +19,7 @@ _4_: Utilizing Visual Studio's Integration Services (SSIS) to update and populat
 <details>
 
 <summary>Special instructions required for the Reviewer:</summary>
+
 
 
 **•** To View the Power BI file (TotalSalesby Inventory and Region.pbix), 
@@ -52,7 +54,7 @@ choose `Restore Database...` at the `Destination` option click the drop down arr
 
 **•** To Create the other two databases (AWN_STG.sql and AWN_DW.sql):
 Locate the scripts folder, inside there are 3 SQL script, load them into SqL Server Management Studio (SSMS) and `Execute` them by clicking the Play button or by pressing 
-(ALT + X)
+(ALT + X). the 3rd script (AWN_HR.sql) if you execute it the HR Fact tables will be created in the staging area, it will also Create views and than retrive data from the source, this script tells me how much the emplyees are getting paid.
 
 #
 
